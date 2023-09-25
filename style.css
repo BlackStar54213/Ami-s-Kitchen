@@ -1,0 +1,519 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav {
+    background-color: white;
+    text-align: right;
+    padding: 20px;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav a {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.animateimg {
+    position: absolute;
+    height: 10cm;
+    z-index: 0;
+}
+
+#img1 {
+    position: absolute;
+    top: -10%;
+    left: 0%;
+}
+
+#img2 {
+    position: absolute;
+    left: 0%;
+    bottom: -10%;
+}
+
+#img3 {
+    position: absolute;
+    top: -17%;
+    right: 0%;
+    display: none;
+}
+
+#img4 {
+    position: absolute;
+    top: -10%;
+    right: 39%;
+    transform: rotate(45deg);
+    transform: rotate3d(45deg);
+}
+
+
+#bg {
+    height: 91vh;
+    top: 0%;
+    position: absolute;
+    right: 0%;
+}
+
+nav a:hover {
+    border-bottom: 2px solid orange;
+    transition: all.5s;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #00b10f;
+    color: #ffffff;
+    position: relative;
+    padding: 0%;
+    box-shadow: black 2px 10px 10px;
+}
+
+header h1 {
+    font-size: 100px;
+    letter-spacing: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+    text-shadow: black 4px 4px 10px;
+}
+
+header p {
+    font-family: anton;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 3%;
+    top: 7%;
+}
+
+.logo img {
+    width: 180px;
+    margin-top: 10px;
+}
+
+.gridtextimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    height: 900px;
+    margin-bottom: 80px;
+}
+
+.gridtext {
+    background-color: rgb(240, 156, 0);
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.gridtext h2 {
+    padding: 10px;
+    font-size: 45px;
+    color: rgb(0, 0, 170);
+}
+
+.gridtext p {
+    width: 70%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+
+.gridtext button {
+    background-color: white;
+    color: orange;
+    padding: 14px;
+    width: 150px;
+    border: none;
+    margin: 10px;
+    margin-top: 30px;
+    font-weight: 700px;
+}
+
+.gridtext button:hover {
+    background-color: rgb(180, 6, 78);
+    color: white;
+    font-family: anton;
+    border: 1px white;
+    letter-spacing: 3px;
+    transition: all .5s;
+}
+
+.foods {
+    background-image: url(./images/Screenshot\ \(28\).png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foods h2 {
+    font-size: 50px;
+    color: white;
+    font-family: raleway;
+    background-color: rgba(0, 0, 0, 0.521);
+    backdrop-filter: blur(4px);
+    width: fit-content;
+    font-weight: 700;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img {
+    background-color: white;
+    height: 50%;
+    width: 100%;
+}
+
+.text {
+    background-color: orange;
+    height: 50%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.talk div {
+    margin-top: 20px;
+}
+
+.talk div h4 {
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.talk div p {
+    width: 90%;
+    font-size: 17px;
+    font-family: Montserrat;
+    text-align: justify;
+    line-height: 1.5882em;
+    color: gray;
+}
+
+.inputlabel {
+    display: inline-block;
+}
+
+.inputlabel label {
+    font-size: 20px;
+    font-family: Montserrat;
+
+}
+
+.inputlabel input,
+select {
+    padding: 15px;
+    width: 500px;
+    font-size: 24px;
+    border: 3px solid black;
+    outline: none;
+    color: gray;
+    font-weight: 200;
+}
+
+.contain {
+    width: 100%;
+}
+
+.inputradio {
+    padding: 15px;
+    width: 500px;
+    font-size: 19px;
+    font-family: Montserrat;
+    font-weight: 200;
+    color: gray;
+    display: inline-block;
+}
+
+.inputradio label {
+    color: black;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+
+.radio {
+    display: flex;
+}
+
+textarea {
+    width: 1000px;
+    height: 500px;
+}
+
+.submit {
+    padding: 20px 40px;
+    background-color: rgb(19, 19, 177);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    border: 2px solid rgb(19, 19, 177);
+    color: rgb(19, 19, 177);
+    background-color: transparent;
+    transition: all .5s;
+}
+
+footer {
+    height: 70vh;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer h4 {
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.footlink {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footlink:hover {
+    color: rgb(255, 230, 0);
+}
+
+.important li {
+    padding: 20px;
+    list-style: none;
+    border-bottom: 1px solid white;
+    width: 230px;
+}
+
+.contactlink {
+    color: white;
+    text-decoration: none;
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.touch li {
+    border: none;
+    padding: 10px;
+}
+
+.contactlink img,
+.what img {
+    width: .5cm;
+
+}
+
+.what {
+    padding: 10px 40px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 5vh;
+    text-decoration: none;
+    left: 5%;
+}
+
+#top {
+    left: initial;
+    right: 5%;
+}
+
+
+.what:hover {
+    border: 1px solid blue;
+    color: blue;
+    background-color: white;
+    transition: all .5s;
+}
+
+.gridtextimg img {
+    width: 100%;
+    height: 500px;
+}
+
+.menucontrol {
+    display: none;
+}
+
+
+@media only screen and (max-width:950px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    #open {
+        z-index: 1;
+        padding: 6px;
+        background-color: #00b10fb0;
+        position: fixed;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .inputlabel {
+        display: block;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .inputlabel input {
+        width: auto;
+    }
+
+    select {
+        width: 90%;
+    }
+
+    #img1,
+    #img2,
+    #img4 {
+        display: none;
+    }
+
+    #bg {
+        display: flex;
+    }
+
+    .gridtextimg {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .gridtextimg img {
+        display: none;
+    }
+
+    .container {
+        overflow-x: scroll;
+    }
+
+    .card {
+        margin-left: 40px;
+    }
+
+    .foods {
+        position: relative;
+    }
+
+    #top {
+        display: none;
+    }
+
+    .radio {
+        flex-wrap: wrap;
+    }
+
+    textarea {
+        width: 90%;
+        margin-left: 3.5%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.938);
+        z-index: 8909;
+        width: 80%;
+        height: 70vh;
+        backdrop-filter: blur(5px);
+        position: fixed;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 43px;
+        margin-top: 70px;
+    }
+
+    .menucontrol {
+        display: block;
+        position: absolute;
+        height: .7cm;
+        right: 5%;
+        top: 8.5%;
+    }
+}
